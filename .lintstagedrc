@@ -1,5 +1,7 @@
 {
-  "*.ja.md": "textlint",
+  "*.ja.md": [
+    "textlint"
+  ],
   "*.+(js|ts)?(x)": [
     "eslint --fix"
   ],

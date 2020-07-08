@@ -43,6 +43,7 @@
     "eslint-plugin-typescript-sort-keys": "1.2.0",
     "fp-ts": "^2.7.0",
     "husky": "4.2.5",
+    "imagemin-lint-staged": "^0.4.0",
     "jest": "26.1.0",
     "lint-staged": "10.2.11",
     "microbundle": "0.12.2",
@@ -53,14 +54,16 @@
     "textlint-rule-preset-ja-technical-writing": "4.0.0",
     "textlint-rule-spellcheck-tech-word": "5.0.0",
     "ts-jest": "26.1.1",
+    "typedoc": "^0.17.8",
+    "typedoc-plugin-markdown": "^2.3.1",
     "typescript": "3.9.6"
   },
   "scripts": {
-    "patch": "yarn version --patch",
-    "update": "yarn version --minor",
-    "upgrade": "yarn version --upgrade",
-    "dev": "start-storybook --port 19472",
+    "patch": "yarn version --patch && yarn gen-src-docs",
+    "update": "yarn version --minor && yarn gen-src-docs",
+    "upgrade": "yarn version --upgrade && yarn gen-src-docs",
     "build": "[ \"$CI\" = 'true' ] && yarn microbundle || :",
+    "gen-src-docs": "typedoc --plugin typedoc-plugin-markdown --out docs src",
     "test": "jest --config jest.config.js"
   },
   "repository": {
