@@ -2,13 +2,15 @@
   "name": "@nju33/jsonbin-api",
   "version": "0.0.4",
   "source": "src/index.ts",
-  "main": "dist/index.js",
-  "module": "dist/index.module.js",
-  "unpkg": "dist/index.umd.js",
+  "main": "index.js",
+  "module": "index.module.js",
+  "unpkg": "index.umd.js",
   "files": [
-    "dist",
-    "*.js.map",
-    "*.js"
+    "*.map",
+    "*.js",
+    "*.d.ts",
+    "!.*rc.js",
+    "!*.config.js"
   ],
   "peerDependencies": {
     "fp-ts": "^2.0.0"
@@ -58,7 +60,7 @@
     "update": "yarn version --minor",
     "upgrade": "yarn version --upgrade",
     "dev": "start-storybook --port 19472",
-    "build": "microbundle",
+    "build": "[ \"$CI\" = 'true' ] && yarn microbundle || :",
     "test": "jest --config jest.config.js"
   },
   "repository": {

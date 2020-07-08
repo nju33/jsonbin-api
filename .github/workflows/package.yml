@@ -31,7 +31,6 @@ jobs:
       - run: yarn
       - run: yarn test
       - run: yarn build
-      - run: cp -r dist/* .
       - run: yarn publish --tag "$(node -p 'require(`./package.json`).version')"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
