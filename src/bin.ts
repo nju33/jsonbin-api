@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/triple-slash-reference
+/// <reference lib="dom" />
+
 import { pipe } from 'fp-ts/lib/function'
 import { chain, map, TaskEither, tryCatch } from 'fp-ts/lib/TaskEither'
 import createHttpError from './http-errors'
@@ -50,10 +53,7 @@ export type DeleteResultBin = Omit<
   'record'
 > & { message: string }
 
-export type FetchFn = (
-  input: RequestInfo,
-  init?: RequestInit
-) => Promise<Response>
+export type FetchFn = typeof fetch
 
 export type UpdateStrategyFn<R> = (bin: GetResultBin<R>) => R
 
