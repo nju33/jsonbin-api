@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
+  "files": [
+    "dist",
+    "*.js"
+  ],
   "peerDependencies": {
     "fp-ts": "^2.0.0"
   },
