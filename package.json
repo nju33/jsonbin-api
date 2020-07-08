@@ -1,10 +1,22 @@
 {
-  "name": "template-node-library",
-  "version": "0.0.0",
-  "source": "src/index.js",
+  "name": "@nju33/jsonbin-api",
+  "version": "0.0.3",
+  "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
+  "files": [
+    "dist",
+    "*.js.map",
+    "*.js"
+  ],
+  "peerDependencies": {
+    "fp-ts": "^2.0.0"
+  },
+  "dependencies": {
+    "@types/http-errors": "^1.6.3",
+    "http-errors": "^1.8.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "9.0.1",
     "@commitlint/config-conventional": "9.0.1",
@@ -27,6 +39,7 @@
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-tsdoc": "0.2.5",
     "eslint-plugin-typescript-sort-keys": "1.2.0",
+    "fp-ts": "^2.7.0",
     "husky": "4.2.5",
     "jest": "26.1.0",
     "lint-staged": "10.2.11",
@@ -50,7 +63,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/geekcojp/template--node-library.git"
+    "url": "ssh://git@github.com/nju33/jsonbin-api.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

@@ -10,7 +10,7 @@
     "declaration": true,
     "sourceMap": true,
     "outDir": "./out",
-    "rootDir": "./",
+    "rootDir": "./src",
     "isolatedModules": true,
     "strict": true,
     "noUnusedLocals": true,

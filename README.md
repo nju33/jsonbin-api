@@ -12,7 +12,7 @@
 ## Install
 
 ```bash
-
+yarn add fp-ts @nju33/jsonbin-api
 ```
 
 ## Contributors ✨

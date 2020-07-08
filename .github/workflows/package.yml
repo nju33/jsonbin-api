@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 12.x
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@geekcojp'
+          scope: '@nju33'
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -31,7 +31,7 @@ jobs:
       - run: yarn
       - run: yarn test
       - run: yarn build
-      - run: mv dist/* . && rmdir dist
+      - run: cp -r dist/* .
       - run: yarn publish --tag "$(node -p 'require(`./package.json`).version')"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
