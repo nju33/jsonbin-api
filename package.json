@@ -62,7 +62,7 @@
     "patch": "yarn version --patch && yarn gen-src-docs",
     "update": "yarn version --minor && yarn gen-src-docs",
     "upgrade": "yarn version --upgrade && yarn gen-src-docs",
-    "build": "[ \"$CI\" = 'true' ] && yarn microbundle || :",
+    "build": "[ \"$CI\" = 'true' ] && yarn microbundle --tsconfig tsconfig.build.json || :",
     "gen-src-docs": "typedoc --plugin typedoc-plugin-markdown --out docs src",
     "test": "jest --config jest.config.js"
   },
