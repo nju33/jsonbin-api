@@ -4397,7 +4397,7 @@ format@^0.2.0:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
-fp-ts@^2.7.0:
+fp-ts@2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.7.1.tgz#7bd754f3362f4b9bc4d272a97c0658e9a1bc16bc"
   integrity sha512-rYy41jF1gVhBNYbPwup50dtyT686OKOoa86PXwh8aKpBRfmvPhnBh2zUkOYj84GIMSCsgY+oJ/RVhVKRvWNPTA==
@@ -4962,7 +4962,7 @@ imagemin-jpegtran@^6.0.0:
     is-jpg "^2.0.0"
     jpegtran-bin "^4.0.0"
 
-imagemin-lint-staged@^0.4.0:
+imagemin-lint-staged@0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/imagemin-lint-staged/-/imagemin-lint-staged-0.4.0.tgz#4a9e046640059068a1eb8cc430657139a281566d"
   integrity sha512-41OYUu3AEHCrfAjWMo0Ou28oGI/F5SNK4E9ec5Wu4yd24tahl7hn9gBh3p9608Y3/WH2hyU4OhRryDuovKhIrQ==
@@ -10085,7 +10085,7 @@ typedoc-default-themes@^0.10.2:
   dependencies:
     lunr "^2.3.8"
 
-typedoc-plugin-markdown@^2.3.1:
+typedoc-plugin-markdown@2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/typedoc-plugin-markdown/-/typedoc-plugin-markdown-2.3.1.tgz#c4c6c3228f625b24875e87cc1622b9a259b914ce"
   integrity sha512-7rlmg1tLjddYy11uznHCAlyoOpxdWnFXqGEZ7j2mJ4KJg2avwWgEpw6SFZVofgPCGn36zklpFS51lHxYSRTLVQ==
@@ -10093,7 +10093,7 @@ typedoc-plugin-markdown@^2.3.1:
     fs-extra "^9.0.0"
     handlebars "^4.7.6"
 
-typedoc@^0.17.8:
+typedoc@0.17.8:
   version "0.17.8"
   resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.17.8.tgz#96b67e9454aa7853bfc4dc9a55c8a07adfd5478e"
   integrity sha512-/OyrHCJ8jtzu+QZ+771YaxQ9s4g5Z3XsQE3Ma7q+BL392xxBn4UMvvCdVnqKC2T/dz03/VXSLVKOP3lHmDdc/w==
